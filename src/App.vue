@@ -1,4 +1,4 @@
-<!-- <script setup>
+<script setup>
 import { ref } from "vue";
 import Button from "./components/Button.vue";
 import Input from "./components/Input.vue";
@@ -17,15 +17,18 @@ const handleChange = e => {
 </script>
 
 <template>
-  <Input
-    type="text"
-    placeholder="inserisci un nome"
-    :value="value"
-    :onChange="handleChange" />
-  <Button :onClick="handleClick">Button</Button>
-</template> -->
+  <div>
+    <Input
+      type="text"
+      placeholder="inserisci un nome"
+      :value="value"
+      :onChange="handleChange" />
+    <Button :onClick="handleClick">Button</Button>
+  </div>
+  <p>{{ value }}</p>
+</template>
 
-<script>
+<!-- <script>
 import Button from "./components/Button.vue";
 import Input from "./components/Input.vue";
 export default {
@@ -62,4 +65,4 @@ export default {
     <Button :onClick="handleClick">Button</Button>
   </div>
   <p>{{ value }}</p>
-</template>
+</template> -->
