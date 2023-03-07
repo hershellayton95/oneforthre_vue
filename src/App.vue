@@ -30,8 +30,8 @@ export default {
     <Input
       type="text"
       placeholder="inserisci un nome"
-      :value="value"
-      :onChange="handleChange" />
+      v-bind:value="value"
+      :onChange="handleChange" /><!--v-on:onChange="handleChange" -->
     <Button :onClick="handleClick">Button</Button>
   </div>
   <p>{{ value }}</p>

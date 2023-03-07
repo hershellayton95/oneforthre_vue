@@ -17,5 +17,5 @@ export default {
     :type="type"
     :value="value"
     :placeholder="placeholder"
-    @input="onChange" />
+    @input="onChange" /><!--v-on:input="onChange" -->
 </template>
