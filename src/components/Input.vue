@@ -1,30 +1,4 @@
-<script setup>
-const props = defineProps({
-  type: {
-    type: String,
-  },
-  value: {
-    type: String,
-  },
-  placeholder: {
-    type: String,
-  },
-  onChange: {
-    type: Function,
-  },
-});
-</script>
-
-<template>
-  <input
-    class="inline-block my-2 mx-1 py-[0.35rem] px-2 leading-6 align-middle rounded-sm outline outline-2 focus:outline-offset-1 outline-gray-400 placeholder:italic"
-    :type="type"
-    :value="value"
-    :placeholder="placeholder"
-    @input="onChange" />
-</template>
-
-<!-- <script>
+<script>
 export default {
   props: {
     type: String,
@@ -44,4 +18,4 @@ export default {
     :value="value"
     :placeholder="placeholder"
     @input="onChange" />
-</template> -->
+</template>
