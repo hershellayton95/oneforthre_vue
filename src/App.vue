@@ -12,14 +12,8 @@ export default {
     };
   },
   methods: {
-    setValue(input) {
-      this.value = input;
-    },
     handleClick() {
       console.log(this.value);
-    },
-    handleChange(e) {
-      this.setValue(e.target.value);
     },
   },
 };
@@ -27,11 +21,7 @@ export default {
 
 <template>
   <div>
-    <Input
-      type="text"
-      placeholder="inserisci un nome"
-      v-bind:value="value"
-      :onChange="handleChange" /><!--v-on:onChange="handleChange" -->
+    <Input type="text" placeholder="inserisci un nome" v-model="value" />
     <Button :onClick="handleClick">Button</Button>
   </div>
   <p>{{ value }}</p>
